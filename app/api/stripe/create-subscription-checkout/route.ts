@@ -1,7 +1,6 @@
 import { auth } from "@/app/lib/auth";
 import stripe from "@/app/lib/stripe";
 import { getOrCreateCustomer } from "@/app/server/stripe/get-customer-id";
-import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {

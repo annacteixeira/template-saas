@@ -1,6 +1,5 @@
   import stripe from "@/app/lib/stripe";
   import { auth } from "@/app/lib/auth";
-  import { error } from "console";
   import { getOrCreateCustomer } from "@/app/server/stripe/get-customer-id";
   import { NextRequest, NextResponse } from "next/server";
 
