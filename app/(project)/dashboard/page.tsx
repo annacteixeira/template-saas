@@ -1,6 +1,7 @@
 import { auth } from "@/app/lib/auth";
 import { redirect } from "next/navigation";
 import { handleAuth } from "@/app/actions/handle-auth";
+import Link from "next/link";
 
 export default async function Dashboard() {
   const session = await auth();
@@ -21,6 +22,8 @@ export default async function Dashboard() {
           </form>
         )
       }
+
+      <Link href="/payments">Pagamentos</Link>
     </div>
   );
 }
